@@ -158,7 +158,7 @@ section.hero {
 
 .p-carte p {
   margin-bottom: 1rem;
-  font-size: 16px; /* Ridurre la dimensione del font */
+  font-size: 16px; 
 }
 
 .img-carte img {
@@ -197,7 +197,8 @@ section.card .text a {
 }
 
 section.card div {
-  background-color: #C1DBD0;
+  background-color: #e2e2e2;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 0 0 5px;
 }
