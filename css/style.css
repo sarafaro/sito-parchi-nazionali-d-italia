@@ -1,3 +1,7 @@
+html {
+  font-size: 14px; /* Ridurre la dimensione base del font */
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #fff;
@@ -6,526 +10,169 @@ body {
   overflow-x: hidden;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-a {
-  text-decoration: none;
-  color: #101129;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 header {
-  max-width: 1400px;
-  margin: 48px auto;
+  max-width: 1200px; /* Ridurre la larghezza massima */
+  margin: 32px auto; /* Ridurre il margine superiore */
   display: flex;
   justify-content: space-between;
-  padding: 8px;
+  padding: 6px; /* Ridurre il padding */
   border-bottom: 1px solid #ccc;
 }
 
 header p {
-  margin: 10px 0 0;
+  margin: 8px 0 0; /* Ridurre i margini */
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 1rem; /* Cambiato da 16px */
-  padding: 15px;
+  font-size: 14px; /* Ridurre la dimensione del font */
+  padding: 12px; /* Ridurre il padding */
 }
 
 header nav ul {
   display: flex;
-  gap: 20px;
+  gap: 16px; /* Ridurre la distanza tra i link */
   list-style: none;
-  padding: 15px;
-  margin-top: 20px;
+  padding: 12px;
+  margin-top: 16px;
   font-weight: bold;
-  font-size: 1rem; /* Cambiato da 16px */
+  font-size: 14px; /* Ridurre la dimensione del font */
 }
 
 section.hero {
-  padding: 60px 16px;
+  padding: 48px 12px; /* Ridurre il padding */
   color: #fff;
   text-align: center;
-  max-width: 1200px;
+  max-width: 1000px; /* Ridurre la larghezza massima */
   margin: auto;
 }
 
 .hero h1 {
   margin: 0;
   font-weight: normal;
-  font-size: 1.5rem; /* Cambiato da 18px */
-  padding: 24px;
+  font-size: 16px; /* Ridurre la dimensione del font */
+  padding: 16px;
 }
 
 .hero p {
   margin: 0;
   font-weight: normal;
-  font-size: 1rem; /* Cambiato da 16px */
-}
-
-.uno {
-  position: relative;
-  width: 100%;
-  height: 25vh;
-  overflow: hidden;
-}
-
-.img-hero {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-}
-
-.testo-hero {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-}
-
-.testo-hero .contenitore-testo-hero {
-  max-width: 900px;
-  padding: 20px;
-  font-size: 1.5rem; /* Cambiato da 24px */
-}
-
-.contenitore-testo-hero p {
-  font-size: 1.25rem; /* Cambiato da 20px */
+  font-size: 14px; /* Ridurre la dimensione del font */
 }
 
 .carte {
   display: flex;
   flex-direction: column;
-  gap: 64px;
-  padding: 64px 16px 32px;
+  gap: 48px; /* Ridurre il gap tra gli elementi */
+  padding: 48px 12px 24px; /* Ridurre il padding */
   margin: auto;
-  max-width: 1000px;
+  max-width: 800px; /* Ridurre la larghezza massima */
 }
 
 .carte-layout {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 40px;
+  grid-template-columns: 1fr 1fr; /* Cambiare la griglia a 2 colonne */
+  gap: 24px; /* Ridurre il gap tra gli elementi */
   align-items: start;
 }
 
 .h2-carte {
   position: sticky;
-  top: 140px;
-  font-size: 1.25rem; /* Cambiato da 20px */
+  top: 120px; /* Ridurre la posizione sticky */
+  font-size: 14px; /* Ridurre la dimensione del font */
   font-weight: normal;
-  padding-right: 50px;
+  padding-right: 40px;
 }
 
-.h2-carte h2 {
-  margin: 0;
-  font-size: 1.75rem; /* Cambiato da 1.8rem */
-}
-
-.content-carte {
+.content {
+  max-width: 1000px; /* Ridurre la larghezza massima */
+  margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 24px;
-}
-
-.p-carte {
-  font-size: 1.25rem; /* Cambiato da 19px */
-  line-height: 1.4;
-}
-
-.p-carte p {
-  margin-bottom: 1rem;
-  font-size: 1rem; /* Cambiato da 16px */
-}
-
-.img-carte img {
-  height: auto;
-  border-radius: 8px;
+  gap: 20px; /* Ridurre il gap tra gli elementi */
+  padding: 24px 12px; /* Ridurre il padding */
 }
 
 section.card {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  max-width: 1200px;
-  margin: 48px auto;
-  gap: 30px;
+  grid-template-columns: repeat(4, 1fr); /* Cambiare la griglia a 4 colonne */
+  gap: 20px; /* Ridurre il gap tra gli elementi */
+  max-width: 1000px; /* Ridurre la larghezza massima */
+  margin: 32px auto;
 }
 
-.card img,
-section.card img {
-  height: 250px;
+.card img {
+  height: 200px; /* Ridurre l'altezza dell'immagine */
   width: 100%;
-  border-radius: 8px;
-}
-
-section.card p,
-.card .text-box p {
-  margin: 0;
-  font-size: 1.25rem; /* Cambiato da 20px */
-  color: #101129;
-  padding: 10px;
-  font-weight: bold;
-  text-align: center;
-}
-
-section.card .text a {
-  color: #101129;
-}
-
-section.card div {
-  background-color: #C1DBD0;
-  border-radius: 8px;
-  padding: 0 0 5px;
+  border-radius: 6px; /* Ridurre il border-radius */
 }
 
 section.intro {
   margin: auto;
-  font-size: 1.125rem; /* Cambiato da 18px */
+  font-size: 16px; /* Ridurre la dimensione del font */
   color: #101129;
-  padding: 50px;
+  padding: 40px; 
 }
 
-.content {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  padding: 32px 16px;
-}
 
-.card,
-.blocco {
-  display: flex;
-  align-items: stretch;
-  gap: 25px;
-}
-
-.card img,
-.blocco img {
-  width: 15%;
-  border-radius: 8px;
-}
-
-.card .text-box,
-.blocco .text-box {
-  width: 100%;
-  padding: 25px;
-  border-radius: 8px;
-  color: #101129;
-}
-
-.card .text-box {
-  background-color: #CEF17B;
-}
-
-.blocco .text-box {
-  background-color: #D5EFE6;
-}
-
-.card .text-box h2,
-.blocco .text-box h2 {
-  font-size: 2rem; /* Cambiato da 30px */
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.card .text-box p,
-.blocco .text-box p {
-  font-size: 1.25rem; /* Cambiato da 20px */
-  line-height: 1.5;
-}
-
-.attivita-ed-esperienze {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 48px auto;
-  padding-bottom: 60px;
-}
-
-.box-testo {
-  background-color: #CEF17B;
-  padding: 30px;
-  border-radius: 12px;
-  width: 300px;
-  height: 450px;
-  align-items: center;
-}
-
-.box-testo h2,
-.box-testo p {
-  font-size: 1.5rem; /* Cambiato da 24px */
-  margin-bottom: 15px;
-  line-height: 1.5;
-}
-
-.box-testo a {
-  color: #084734;
-  font-weight: bold;
-}
-
-.box-immagini {
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
-}
-
-.box-immagini img {
-  width: 400px;
-  height: 500px;
-  border-radius: 8px;
-}
-
-.altri-parchi {
-  display: grid;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 30px;
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.testo-parco {
-  background-color: #CEF17B;
-  padding: 20px;
-  border-radius: 12px;
-  font-weight: bold;
-  font-size: 1.125rem; /* Cambiato da 18px */
-  text-align: center;
-}
-
-.nome-sezione h1 {
-  max-width: 1200px;
-  margin: 48px auto;
-  font-size: 2rem; /* Cambiato da 28px */
-  font-weight: bold;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-footer nav {
-  display: flex;
-  gap: 10px;
-}
-
-footer nav a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Media queries */
 @media (max-width: 768px) {
-  /* Header e Footer */
   header,
   footer {
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    gap: 15px;
-  }
-
-  header nav ul,
-  footer nav {
     flex-direction: row;
     gap: 10px;
   }
 
-  /* Hero section */
-  section.hero h1 {
-    font-size: 1.2rem; /* Cambiato da 18px */
+  section.hero {
+    padding: 48px 12px;
+    max-width: 100%;
   }
 
-  section.hero p {
-    font-size: 1rem; /* Cambiato da 16px */
-  }
-
-  /* Card section */
   section.card {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
-    padding: 0 16px;
+    grid-template-columns: 1fr; 
+    gap: 12px; 
   }
 
-  section.card p {
-    font-size: 1rem; /* Cambiato da 16px */
-    padding: 12px;
-  }
-
-  .card,
-  .blocco {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .card img,
-  .blocco img {
-    width: 100%;
-    height: auto;
-  }
-
-  .card .text-box,
-  .blocco .text-box {
-    padding: 16px;
-  }
-
-  .card .text-box h2,
-  .blocco .text-box h2 {
-    font-size: 1.25rem; /* Cambiato da 22px */
-  }
-
-  .card .text-box p,
-  .blocco .text-box p {
-    font-size: 1rem; /* Cambiato da 16px */
-  }
-
-  /* Attività ed esperienze */
-  .attivita-ed-esperienze {
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 16px;
+  .carte {
+    padding: 32px 12px;
+    gap: 24px; 
   }
 
   .box-testo {
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 16px; 
   }
 
-  .box-testo h2,
-  .box-testo p {
-    font-size: 1rem; /* Cambiato da 16px */
-  }
-
-  .box-immagini {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-  }
-
-  .box-immagini img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Altri parchi */
   .altri-parchi {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
-    padding: 0 16px;
+    grid-template-columns: 1fr; 
+    gap: 12px; 
   }
 
-  .testo-parco {
-    font-size: 1rem; /* Cambiato da 16px */
-    padding: 16px;
-  }
-
-  .nome-sezione h1 {
-    font-size: 1.25rem; /* Cambiato da 22px */
-    padding: 0 16px;
-  }
-
-  /* Carte */
-  .carte {
-    padding: 32px 16px;
-    gap: 32px;
-  }
-
-  .carte-layout {
-    display: flex;
+  .attivita-ed-esperienze {
     flex-direction: column;
-    gap: 24px;
-  }
-
-  .h2-carte {
-    position: static;
-    font-size: 1rem; /* Cambiato da 16px */
-    padding-right: 0;
-  }
-
-  .h2-carte h2 {
-    font-size: 1.25rem; /* Cambiato da 20px */
-  }
-
-  .p-carte {
-    font-size: 1rem; /* Cambiato da 16px */
-    line-height: 1.4;
-  }
-
-  .img-carte img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
+    gap: 16px; 
+    padding: 24px 12px; 
   }
 }
 
 @media (max-width: 480px) {
+  header,
+  footer {
+    padding: 8px; 
+  }
+
   section.hero h1 {
-    font-size: 1rem; /* Cambiato da 16px */
-    padding: 12px;
+    font-size: 14px; 
   }
 
-  section.hero p,
-  .box-testo p,
-  .card .text-box p,
-  .blocco .text-box p,
-  .testo-parco,
-  .p-carte {
-    font-size: 0.875rem; /* Cambiato da 14px */
+  section.hero p {
+    font-size: 12px; 
   }
 
-  .nome-sezione h1,
-  .card .text-box h2,
-  .blocco .text-box h2,
-  .h2-carte h2 {
-    font-size: 1.125rem; /* Cambiato da 18px */
-  }
-
-  .box-testo,
-  .carte,
-  .carte-layout,
-  .altri-parchi,
-  .attivita-ed-esperienze,
-  .section.card {
-    padding: 0 12px;
-    gap: 16px;
-  }
-
-  .img-carte img,
-  .box-immagini img,
-  .card img,
-  .blocco img {
-    border-radius: 4px;
+  section.card {
+    grid-template-columns: 1fr; 
+    gap: 8px; 
   }
 }
+
 
 
