@@ -1,18 +1,27 @@
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #fff;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  
 }
 
-img{
+img {
   max-width: 100%;
   display: block;
+  object-fit: cover;
 }
 
-header{
+a {
+  text-decoration: none;
+  color: #101129;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
   max-width: 1800px;
   margin: 48px auto;
   display: flex;
@@ -22,150 +31,109 @@ header{
 }
 
 header p {
-  margin: 0%;
+  margin: 10px 0 0;
   font-weight: bold;
-  text-transform:uppercase;
+  text-transform: uppercase;
   font-size: 20px;
   padding: 15px;
-  margin-top: 10px;
 }
-
-header a {
-  text-decoration: none;
-  color: #101129;
- 
-}
-
 
 header nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
   padding: 15px;
   margin-top: 20px;
-  justify-content: space-between;
-  display: flex;
-  list-style: none;
-  gap: 20px;
   font-weight: bold;
   font-size: 18px;
 }
 
-header nav a{
-  text-decoration: none;
-  color: #101129;
-
-}
-
-header a:hover {
-  text-decoration: underline;
-
-}
-
-header nav a {
-  color: #101129;
-}
-
-header nav a:hover {
- color: #101129;
- text-decoration: underline;
-}
-
 section.hero {
-
- padding: 60px 16px;
-
+  padding: 60px 16px;
+  color: #fff;
+  text-align: center;
 }
 
-section.hero h1 {
-  margin: 0%;
-  color: #fff;
+.hero h1 {
+  margin: 0;
   font-weight: normal;
-  text-align: center;
   font-size: 50px;
   padding: 24px;
   position: relative;
 }
 
-.uno {
-  position: relative;
-  width: 100%;
-  height: 25vh; 
-  overflow: hidden;
-}
-
-.testo-hero {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5); 
-  color: #fff;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 24px;
-}
-
-.contenitore-testo-hero p{
+.hero p {
+  margin: 0;
+  font-weight: normal;
   font-size: 20px;
 }
 
-.testo-hero .contenitore-testo-hero {
-  max-width: 900px; 
-  padding: 20px;
+.uno {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  overflow: hidden;
 }
 
 .img-hero {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
   width: 100%;
   height: 100%;
-  z-index: -1; 
 }
 
 .img-hero img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
 }
 
-
-section.hero p {
-  margin: 0%;
-  color: #fff;
-  font-weight: normal;
+.testo-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+}
+
+.testo-hero .contenitore-testo-hero {
+  max-width: 900px;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.contenitore-testo-hero p {
   font-size: 20px;
-  
-  
 }
 
 .carte {
   display: flex;
   flex-direction: column;
   gap: 64px;
-  padding: 128px 16px 64px 16px;
+  padding: 128px 16px 64px;
   max-width: 1100px;
   margin: auto;
 }
 
 .carte-layout {
   display: grid;
-  grid-template-columns: 2fr 5fr; 
+  grid-template-columns: 2fr 5fr;
   gap: 100px;
-  align-items: start; 
+  align-items: start;
 }
 
 .h2-carte {
+  position: sticky;
+  top: 140px;
   font-size: 30px;
   font-weight: normal;
-  margin-bottom: 1.4rem;
-  position: sticky;
-  top: 140px; 
-  align-self: flex-start;
   padding-right: 50px;
-  width: 100%; 
 }
 
 .h2-carte h2 {
@@ -182,96 +150,60 @@ section.hero p {
 .p-carte {
   font-size: 19px;
   line-height: 1.4;
-  gap: 10px;
-  margin-bottom: 1.4rem;
 }
 
 .p-carte p {
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
 }
 
 .img-carte img {
   width: 100%;
   height: 50%;
-  object-fit: cover;
   border-radius: 8px;
 }
-
-
 
 section.card {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   max-width: 1400px;
   margin: 48px auto;
   gap: 30px;
-
 }
 
+.card img,
 section.card img {
   height: 250px;
   width: 100%;
-  object-fit: cover;
   border-radius: 8px;
 }
 
-section.card p{
-  margin: 0%;
+section.card p,
+.card .text-box p {
+  margin: 0;
   font-size: 20px;
   color: #101129;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   font-weight: bold;
   text-align: center;
-  text-decoration: none;
-
 }
 
 section.card .text a {
   color: #101129;
-  text-decoration:none;
 }
 
-section.card .text:hover {
-  text-decoration: underline;
-  color: #101129;
-
-}
 section.card div {
   background-color: #C1DBD0;
   border-radius: 8px;
-  padding: 0px 0px 5px ;
-   
+  padding: 0 0 5px;
 }
 
-.box-testo a:hover {
-  text-decoration: underline;
-
-}
-
-
-footer {
-  background-color: #525254;
-  color: white;
-  padding: 15px;
-  margin-top: 20px;
-  justify-content: space-between;
-  display: flex;
-}
-
-footer nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-
-section.intro{
+section.intro {
   margin: auto;
   font-size: 18px;
   color: #101129;
-  padding: 50px
-    
+  padding: 50px;
 }
+
 .content {
   max-width: 1700px;
   margin: auto;
@@ -281,71 +213,47 @@ section.intro{
   padding: 40px 16px;
 }
 
-
-.card {
+.card,
+.blocco {
   display: flex;
-  align-items: stretch; 
+  align-items: stretch;
   gap: 25px;
 }
 
-
-.card img {
+.card img,
+.blocco img {
   width: 20%;
-  object-fit: cover;
   border-radius: 8px;
 }
 
-
-.card .text-box {
+.card .text-box,
+.blocco .text-box {
   width: 100%;
-  background-color: #CEF17B;
   padding: 25px;
   border-radius: 8px;
   color: #101129;
-  display: flex;
-  flex-direction: column;
-    
 }
 
-
-.card img, 
 .card .text-box {
-  height: auto;
+  background-color: #CEF17B;
 }
 
+.blocco .text-box {
+  background-color: #D5EFE6;
+}
 
-.card .text-box h2 {
+.card .text-box h2,
+.blocco .text-box h2 {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-
-.card .text-box p {
+.card .text-box p,
+.blocco .text-box p {
   font-size: 20px;
   line-height: 1.5;
 }
-
-footer {
-  background-color: #333;
-  color: white;
-  padding: 15px;
-  margin-top: 20px;
-  justify-content: space-between;
-  display: flex;
-  
-    
-}
-
-footer nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-
-
-
 
 .attivita-ed-esperienze {
   display: flex;
@@ -353,11 +261,8 @@ footer nav a {
   align-items: flex-start;
   gap: 30px;
   padding-bottom: 60px;
-  
-
 }
-  
-  
+
 .box-testo {
   background-color: #CEF17B;
   padding: 30px;
@@ -365,52 +270,40 @@ footer nav a {
   width: 500px;
   height: 450px;
 }
-  
-.box-testo h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
-}
-  
+
+.box-testo h2,
 .box-testo p {
   font-size: 24px;
   margin-bottom: 15px;
   line-height: 1.5;
 }
-  
+
 .box-testo a {
-  text-decoration: none;
   color: #084734;
   font-weight: bold;
 }
-  
-  
+
 .box-immagini {
   display: flex;
   gap: 20px;
 }
-  
+
 .box-immagini img {
   width: 400px;
   height: 550px;
-  object-fit: cover;
   border-radius: 8px;
 }
 
-.box-immagini img, 
-.box-testo {
-  height: auto;
-}
-
-.altri-parchi{
+.altri-parchi {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   max-width: 1400px;
   margin: 48px auto;
-  gap: 30px; 
+  gap: 30px;
 }
 
-.testo-parco{
-  background-color:#CEF17B;
+.testo-parco {
+  background-color: #CEF17B;
   padding: 20px;
   border-radius: 12px;
   font-weight: bold;
@@ -421,31 +314,44 @@ footer nav a {
 .nome-sezione h1 {
   max-width: 1400px;
   margin: 48px auto;
-  font-size: 32px; 
+  font-size: 32px;
   font-weight: bold;
-  
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer nav {
+  display: flex;
+  gap: 10px;
+}
+
+footer nav a {
+  color: white;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
-  header {
-    flex-direction: row;
+  header,
+  footer {
+    flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 15px;
   }
 
-  header nav ul {
-    display: flex;
+  header nav ul,
+  footer nav {
     flex-direction: row;
     gap: 10px;
-    align-items: center;
   }
 
-  header p {
-    font-size: 18px;
-  }
-
- 
   section.hero h1 {
     font-size: 40px;
   }
@@ -454,10 +360,8 @@ footer nav a {
     font-size: 18px;
   }
 
- 
   section.card {
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
     padding: 0 16px;
   }
 
@@ -466,116 +370,37 @@ footer nav a {
     padding: 12px;
   }
 
-  
   .attivita-ed-esperienze {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
   }
 
-  .altri-parchi {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    max-width: 1300px;
-    margin: 48px auto;
-    gap: 30px;
-  }
-
-  
-  .box-testo {
+  .box-testo,
+  .box-immagini {
     width: 90%;
-    height: auto;
     text-align: center;
   }
 
   .box-immagini {
     flex-direction: column;
-    width: 90%;
   }
 
-  .box-immagini img {
-    width: 100%;
-    height: auto;
-  }
-
-  
-  .card {
-    flex-direction: column;
-  }
-
+  .box-immagini img,
   .card img {
     width: 100%;
     height: auto;
   }
 
-  .card .text-box {
-    width: 100%;
-    padding: 20px;
+  .altri-parchi {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .card .text-box h2 {
-    font-size: 24px;
-  }
-
-  .card .text-box p {
-    font-size: 16px;
-  }
-
-  
-  .foto,
-  .foto2 {
-    grid-template-columns: 1fr;
-    padding: 0 16px;
-  }
-
-  .foto img,
-  .foto2 img {
-    height: auto;
-  }
-
-  
-  footer {
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    gap: 15px;
-  }
-
-  footer nav {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-  }
-
-  footer nav a {
-    margin: 0;
+  .card,
+  .blocco {
+    flex-direction: column;
   }
 }
-  
 
-.blocco {
-  display: flex;
-  align-items: stretch; 
-  gap: 25px;
-}
-
-
-.blocco img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-
-.blocco .text-box {
-  width: 100%;
-  background-color: #D5EFE6;
-  padding: 25px;
-  border-radius: 8px;
-  color: #101129;
-    
-}
 
 
 .blocco .text-box h2 {
