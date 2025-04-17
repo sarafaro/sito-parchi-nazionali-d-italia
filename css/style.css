@@ -22,11 +22,11 @@ a:hover {
 }
 
 header {
-  max-width: 1400px; 
+  max-width: 1400px;
   margin: 48px auto;
   display: flex;
   justify-content: space-between;
-  padding: 8px; /* Ridurre il padding */
+  padding: 8px;
   border-bottom: 1px solid #ccc;
 }
 
@@ -34,7 +34,7 @@ header p {
   margin: 10px 0 0;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 1rem; /* Cambiato da 16px */
   padding: 15px;
 }
 
@@ -45,30 +45,28 @@ header nav ul {
   padding: 15px;
   margin-top: 20px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem; /* Cambiato da 16px */
 }
 
 section.hero {
   padding: 60px 16px;
   color: #fff;
   text-align: center;
-  padding: 60px 16px;
-  max-width: 1200px; 
-  margin: auto; 
+  max-width: 1200px;
+  margin: auto;
 }
 
 .hero h1 {
   margin: 0;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 1.5rem; /* Cambiato da 18px */
   padding: 24px;
-  position: relative;
 }
 
 .hero p {
   margin: 0;
   font-weight: normal;
-  font-size: 16px
+  font-size: 1rem; /* Cambiato da 16px */
 }
 
 .uno {
@@ -83,11 +81,6 @@ section.hero {
   top: 0;
   left: 0;
   z-index: -1;
-  width: 100%;
-  height: 100%;
-}
-
-.img-hero img {
   width: 100%;
   height: 100%;
 }
@@ -109,40 +102,40 @@ section.hero {
 .testo-hero .contenitore-testo-hero {
   max-width: 900px;
   padding: 20px;
-  font-size: 24px;
+  font-size: 1.5rem; /* Cambiato da 24px */
 }
 
 .contenitore-testo-hero p {
-  font-size: 20px;
+  font-size: 1.25rem; /* Cambiato da 20px */
 }
 
 .carte {
   display: flex;
   flex-direction: column;
   gap: 64px;
-  padding: 64px 16px 32px; 
+  padding: 64px 16px 32px;
   margin: auto;
-  max-width: 1000px; 
+  max-width: 1000px;
 }
 
 .carte-layout {
   display: grid;
-  grid-template-columns: 1fr 2fr; 
-  gap: 40px; 
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
   align-items: start;
 }
 
 .h2-carte {
   position: sticky;
   top: 140px;
-  font-size: 20px; 
+  font-size: 1.25rem; /* Cambiato da 20px */
   font-weight: normal;
   padding-right: 50px;
 }
 
 .h2-carte h2 {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 1.75rem; /* Cambiato da 1.8rem */
 }
 
 .content-carte {
@@ -152,24 +145,24 @@ section.hero {
 }
 
 .p-carte {
-  font-size: 19px;
+  font-size: 1.25rem; /* Cambiato da 19px */
   line-height: 1.4;
 }
 
 .p-carte p {
   margin-bottom: 1rem;
-  font-size: 16px; /* Ridurre la dimensione del font */
+  font-size: 1rem; /* Cambiato da 16px */
 }
 
 .img-carte img {
-  height: auto; 
+  height: auto;
   border-radius: 8px;
 }
 
 section.card {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: 48px auto;
   gap: 30px;
 }
@@ -184,7 +177,7 @@ section.card img {
 section.card p,
 .card .text-box p {
   margin: 0;
-  font-size: 20px;
+  font-size: 1.25rem; /* Cambiato da 20px */
   color: #101129;
   padding: 10px;
   font-weight: bold;
@@ -203,18 +196,18 @@ section.card div {
 
 section.intro {
   margin: auto;
-  font-size: 18px;
+  font-size: 1.125rem; /* Cambiato da 18px */
   color: #101129;
   padding: 50px;
 }
 
 .content {
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: auto;
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding: 32px 16px; 
+  padding: 32px 16px;
 }
 
 .card,
@@ -226,8 +219,7 @@ section.intro {
 
 .card img,
 .blocco img {
-  width: 15%; 
-
+  width: 15%;
   border-radius: 8px;
 }
 
@@ -249,14 +241,14 @@ section.intro {
 
 .card .text-box h2,
 .blocco .text-box h2 {
-  font-size: 30px;
+  font-size: 2rem; /* Cambiato da 30px */
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .card .text-box p,
 .blocco .text-box p {
-  font-size: 20px;
+  font-size: 1.25rem; /* Cambiato da 20px */
   line-height: 1.5;
 }
 
@@ -265,8 +257,8 @@ section.intro {
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
-  max-width: 1200px; 
-  margin: 48px auto;  
+  max-width: 1200px;
+  margin: 48px auto;
   padding-bottom: 60px;
 }
 
@@ -276,12 +268,12 @@ section.intro {
   border-radius: 12px;
   width: 300px;
   height: 450px;
-  align-items:center ;
+  align-items: center;
 }
 
 .box-testo h2,
 .box-testo p {
-  font-size: 24px;
+  font-size: 1.5rem; /* Cambiato da 24px */
   margin-bottom: 15px;
   line-height: 1.5;
 }
@@ -305,10 +297,9 @@ section.intro {
 
 .altri-parchi {
   display: grid;
-  max-width: 1200px; 
-  margin: 0 auto; 
-  gap: 30px; 
-  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 30px;
   margin-bottom: 30px;
@@ -319,16 +310,15 @@ section.intro {
   padding: 20px;
   border-radius: 12px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125rem; /* Cambiato da 18px */
   text-align: center;
 }
 
 .nome-sezione h1 {
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: 48px auto;
-  font-size: 28px;
+  font-size: 2rem; /* Cambiato da 28px */
   font-weight: bold;
-
 }
 
 footer {
@@ -350,6 +340,7 @@ footer nav a {
   text-decoration: none;
 }
 
+/* Media queries */
 @media (max-width: 768px) {
   /* Header e Footer */
   header,
@@ -368,12 +359,11 @@ footer nav a {
 
   /* Hero section */
   section.hero h1 {
-    font-size: 18px;
-    padding: 16px;
+    font-size: 1.2rem; /* Cambiato da 18px */
   }
 
   section.hero p {
-    font-size: 16px;
+    font-size: 1rem; /* Cambiato da 16px */
   }
 
   /* Card section */
@@ -385,7 +375,7 @@ footer nav a {
   }
 
   section.card p {
-    font-size: 16px;
+    font-size: 1rem; /* Cambiato da 16px */
     padding: 12px;
   }
 
@@ -408,12 +398,12 @@ footer nav a {
 
   .card .text-box h2,
   .blocco .text-box h2 {
-    font-size: 22px;
+    font-size: 1.25rem; /* Cambiato da 22px */
   }
 
   .card .text-box p,
   .blocco .text-box p {
-    font-size: 16px;
+    font-size: 1rem; /* Cambiato da 16px */
   }
 
   /* Attività ed esperienze */
@@ -431,7 +421,7 @@ footer nav a {
 
   .box-testo h2,
   .box-testo p {
-    font-size: 16px;
+    font-size: 1rem; /* Cambiato da 16px */
   }
 
   .box-immagini {
@@ -455,12 +445,12 @@ footer nav a {
   }
 
   .testo-parco {
-    font-size: 16px;
+    font-size: 1rem; /* Cambiato da 16px */
     padding: 16px;
   }
 
   .nome-sezione h1 {
-    font-size: 22px;
+    font-size: 1.25rem; /* Cambiato da 22px */
     padding: 0 16px;
   }
 
@@ -478,16 +468,16 @@ footer nav a {
 
   .h2-carte {
     position: static;
-    font-size: 16px;
+    font-size: 1rem; /* Cambiato da 16px */
     padding-right: 0;
   }
 
   .h2-carte h2 {
-    font-size: 20px;
+    font-size: 1.25rem; /* Cambiato da 20px */
   }
 
   .p-carte {
-    font-size: 16px;
+    font-size: 1rem; /* Cambiato da 16px */
     line-height: 1.4;
   }
 
@@ -500,7 +490,7 @@ footer nav a {
 
 @media (max-width: 480px) {
   section.hero h1 {
-    font-size: 16px;
+    font-size: 1rem; /* Cambiato da 16px */
     padding: 12px;
   }
 
@@ -510,14 +500,14 @@ footer nav a {
   .blocco .text-box p,
   .testo-parco,
   .p-carte {
-    font-size: 14px;
+    font-size: 0.875rem; /* Cambiato da 14px */
   }
 
   .nome-sezione h1,
   .card .text-box h2,
   .blocco .text-box h2,
   .h2-carte h2 {
-    font-size: 18px;
+    font-size: 1.125rem; /* Cambiato da 18px */
   }
 
   .box-testo,
@@ -537,21 +527,5 @@ footer nav a {
     border-radius: 4px;
   }
 }
-
-
-
-
-.blocco .text-box h2 {
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-
-.blocco .text-box p {
-  font-size: 20px;
-  line-height: 1.5;
-}
-
 
 
