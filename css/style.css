@@ -1,7 +1,3 @@
-html {
-  font-size: 14px; /* Ridurre la dimensione base del font */
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #fff;
@@ -10,169 +6,552 @@ body {
   overflow-x: hidden;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #101129;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 header {
-  max-width: 1200px; /* Ridurre la larghezza massima */
-  margin: 32px auto; /* Ridurre il margine superiore */
+  max-width: 1400px; 
+  margin: 48px auto;
   display: flex;
   justify-content: space-between;
-  padding: 6px; /* Ridurre il padding */
+  padding: 8px; /* Ridurre il padding */
   border-bottom: 1px solid #ccc;
 }
 
 header p {
-  margin: 8px 0 0; /* Ridurre i margini */
+  margin: 10px 0 0;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 14px; /* Ridurre la dimensione del font */
-  padding: 12px; /* Ridurre il padding */
+  font-size: 16px;
+  padding: 15px;
 }
 
 header nav ul {
   display: flex;
-  gap: 16px; /* Ridurre la distanza tra i link */
+  gap: 20px;
   list-style: none;
-  padding: 12px;
-  margin-top: 16px;
+  padding: 15px;
+  margin-top: 20px;
   font-weight: bold;
-  font-size: 14px; /* Ridurre la dimensione del font */
+  font-size: 16px;
 }
 
 section.hero {
-  padding: 48px 12px; /* Ridurre il padding */
+  padding: 60px 16px;
   color: #fff;
   text-align: center;
-  max-width: 1000px; /* Ridurre la larghezza massima */
-  margin: auto;
+  padding: 60px 16px;
+  max-width: 1200px; 
+  margin: auto; 
 }
 
 .hero h1 {
   margin: 0;
   font-weight: normal;
-  font-size: 16px; /* Ridurre la dimensione del font */
-  padding: 16px;
+  font-size: 18px;
+  padding: 24px;
+  position: relative;
 }
 
 .hero p {
   margin: 0;
   font-weight: normal;
-  font-size: 14px; /* Ridurre la dimensione del font */
+  font-size: 16px
+}
+
+.uno {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  overflow: hidden;
+}
+
+.img-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.img-hero img {
+  width: 100%;
+  height: 100%;
+}
+
+.testo-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.testo-hero .contenitore-testo-hero {
+  max-width: 900px;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.contenitore-testo-hero p {
+  font-size: 20px;
 }
 
 .carte {
   display: flex;
   flex-direction: column;
-  gap: 48px; /* Ridurre il gap tra gli elementi */
-  padding: 48px 12px 24px; /* Ridurre il padding */
+  gap: 64px;
+  padding: 64px 16px 32px; 
   margin: auto;
-  max-width: 800px; /* Ridurre la larghezza massima */
+  max-width: 1000px; 
 }
 
 .carte-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Cambiare la griglia a 2 colonne */
-  gap: 24px; /* Ridurre il gap tra gli elementi */
+  grid-template-columns: 1fr 2fr; 
+  gap: 40px; 
   align-items: start;
 }
 
 .h2-carte {
   position: sticky;
-  top: 120px; /* Ridurre la posizione sticky */
-  font-size: 14px; /* Ridurre la dimensione del font */
+  top: 140px;
+  font-size: 20px; 
   font-weight: normal;
-  padding-right: 40px;
+  padding-right: 50px;
 }
 
-.content {
-  max-width: 1000px; /* Ridurre la larghezza massima */
-  margin: auto;
+.h2-carte h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.content-carte {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Ridurre il gap tra gli elementi */
-  padding: 24px 12px; /* Ridurre il padding */
+  gap: 24px;
+}
+
+.p-carte {
+  font-size: 19px;
+  line-height: 1.4;
+}
+
+.p-carte p {
+  margin-bottom: 1rem;
+  font-size: 16px; /* Ridurre la dimensione del font */
+}
+
+.img-carte img {
+  height: auto; 
+  border-radius: 8px;
 }
 
 section.card {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Cambiare la griglia a 4 colonne */
-  gap: 20px; /* Ridurre il gap tra gli elementi */
-  max-width: 1000px; /* Ridurre la larghezza massima */
-  margin: 32px auto;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1200px; 
+  margin: 48px auto;
+  gap: 30px;
 }
 
-.card img {
-  height: 200px; /* Ridurre l'altezza dell'immagine */
+.card img,
+section.card img {
+  height: 250px;
   width: 100%;
-  border-radius: 6px; /* Ridurre il border-radius */
+  border-radius: 8px;
+}
+
+section.card p,
+.card .text-box p {
+  margin: 0;
+  font-size: 18px;
+  background-color: #e2e2e2;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+section.card .text a {
+  color: #101129;
+}
+
+section.card div {
+  background-color: #C1DBD0;
+  border-radius: 8px;
+  padding: 0 0 5px;
 }
 
 section.intro {
   margin: auto;
-  font-size: 16px; /* Ridurre la dimensione del font */
+  font-size: 18px;
   color: #101129;
-  padding: 40px; 
+  padding: 50px;
 }
 
+.content {
+  max-width: 1200px; 
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 32px 16px; 
+}
+
+.card,
+.blocco {
+  display: flex;
+  align-items: stretch;
+  gap: 25px;
+}
+
+.card img,
+.blocco img {
+  width: 15%; 
+
+  border-radius: 8px;
+}
+
+.card .text-box,
+.blocco .text-box {
+  width: 100%;
+  padding: 25px;
+  border-radius: 8px;
+  color: #101129;
+}
+
+.card .text-box {
+  background-color: #CEF17B;
+}
+
+.blocco .text-box {
+  background-color: #D5EFE6;
+}
+
+.card .text-box h2,
+.blocco .text-box h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card .text-box p,
+.blocco .text-box p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.attivita-ed-esperienze {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1200px; 
+  margin: 48px auto;  
+  padding-bottom: 60px;
+}
+
+.box-testo {
+  background-color: #CEF17B;
+  padding: 30px;
+  border-radius: 12px;
+  width: 300px;
+  height: 450px;
+  align-items:center ;
+}
+
+.box-testo h2,
+.box-testo p {
+  font-size: 24px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.box-testo a {
+  color: #084734;
+  font-weight: bold;
+}
+
+.box-immagini {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.box-immagini img {
+  width: 400px;
+  height: 500px;
+  border-radius: 8px;
+}
+
+.altri-parchi {
+  display: grid;
+  max-width: 1200px; 
+  margin: 0 auto; 
+  gap: 30px; 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.testo-parco {
+  background-color: #CEF17B;
+  padding: 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.nome-sezione h1 {
+  max-width: 1200px; 
+  margin: 48px auto;
+  font-size: 28px;
+  font-weight: bold;
+
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer nav {
+  display: flex;
+  gap: 10px;
+}
+
+footer nav a {
+  color: white;
+  text-decoration: none;
+}
 
 @media (max-width: 768px) {
+  /* Header e Footer */
   header,
   footer {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  header nav ul,
+  footer nav {
     flex-direction: row;
     gap: 10px;
   }
 
-  section.hero {
-    padding: 48px 12px;
-    max-width: 100%;
+  /* Hero section */
+  section.hero h1 {
+    font-size: 18px;
+    padding: 16px;
   }
 
+  section.hero p {
+    font-size: 16px;
+  }
+
+  /* Card section */
   section.card {
-    grid-template-columns: 1fr; 
-    gap: 12px; 
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 16px;
   }
 
-  .carte {
-    padding: 32px 12px;
-    gap: 24px; 
+  section.card p {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .card,
+  .blocco {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .card img,
+  .blocco img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card .text-box,
+  .blocco .text-box {
+    padding: 16px;
+  }
+
+  .card .text-box h2,
+  .blocco .text-box h2 {
+    font-size: 22px;
+  }
+
+  .card .text-box p,
+  .blocco .text-box p {
+    font-size: 16px;
+  }
+
+  /* Attività ed esperienze */
+  .attivita-ed-esperienze {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 16px;
   }
 
   .box-testo {
     width: 100%;
     height: auto;
-    padding: 16px; 
+    padding: 20px;
   }
 
+  .box-testo h2,
+  .box-testo p {
+    font-size: 16px;
+  }
+
+  .box-immagini {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .box-immagini img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Altri parchi */
   .altri-parchi {
     display: grid;
-    grid-template-columns: 1fr; 
-    gap: 12px; 
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 16px;
   }
 
-  .attivita-ed-esperienze {
+  .testo-parco {
+    font-size: 16px;
+    padding: 16px;
+  }
+
+  .nome-sezione h1 {
+    font-size: 22px;
+    padding: 0 16px;
+  }
+
+  /* Carte */
+  .carte {
+    padding: 32px 16px;
+    gap: 32px;
+  }
+
+  .carte-layout {
+    display: flex;
     flex-direction: column;
-    gap: 16px; 
-    padding: 24px 12px; 
+    gap: 24px;
+  }
+
+  .h2-carte {
+    position: static;
+    font-size: 16px;
+    padding-right: 0;
+  }
+
+  .h2-carte h2 {
+    font-size: 20px;
+  }
+
+  .p-carte {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .img-carte img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
   }
 }
 
 @media (max-width: 480px) {
-  header,
-  footer {
-    padding: 8px; 
-  }
-
   section.hero h1 {
-    font-size: 14px; 
+    font-size: 16px;
+    padding: 12px;
   }
 
-  section.hero p {
-    font-size: 12px; 
+  section.hero p,
+  .box-testo p,
+  .card .text-box p,
+  .blocco .text-box p,
+  .testo-parco,
+  .p-carte {
+    font-size: 14px;
   }
 
-  section.card {
-    grid-template-columns: 1fr; 
-    gap: 8px; 
+  .nome-sezione h1,
+  .card .text-box h2,
+  .blocco .text-box h2,
+  .h2-carte h2 {
+    font-size: 18px;
+  }
+
+  .box-testo,
+  .carte,
+  .carte-layout,
+  .altri-parchi,
+  .attivita-ed-esperienze,
+  .section.card {
+    padding: 0 12px;
+    gap: 16px;
+  }
+
+  .img-carte img,
+  .box-immagini img,
+  .card img,
+  .blocco img {
+    border-radius: 4px;
   }
 }
 
+
+
+
+.blocco .text-box h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.blocco .text-box p {
+  font-size: 20px;
+  line-height: 1.5;
+}
 
 
