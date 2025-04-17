@@ -1,200 +1,417 @@
-/* Reset base */
-* {
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
-/* Contenitore centrale */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-/* Header */
-header {
-  background-color: #2c5f2d;
-  color: white;
-  padding: 20px;
-}
-
-header p a {
+a {
   text-decoration: none;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
+  color: #101129;
 }
 
-nav ul {
-  list-style: none;
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  max-width: 1800px;
+  margin: 48px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 15px;
+}
+
+header nav ul {
   display: flex;
   gap: 20px;
-  margin-top: 10px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-}
-
-/* Hero Section */
-.uno {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40px 0;
-}
-
-.testo-hero {
-  flex: 1;
-  padding: 20px;
-}
-
-.testo-hero h1 {
-  font-size: 36px;
-  color: #2c5f2d;
-  margin-bottom: 10px;
-}
-
-.testo-hero p {
+  list-style: none;
+  padding: 15px;
+  margin-top: 20px;
+  font-weight: bold;
   font-size: 18px;
-  color: #555;
+}
+
+section.hero {
+  padding: 60px 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 50px;
+  padding: 24px;
+  position: relative;
+}
+
+.hero p {
+  margin: 0;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.uno {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  overflow: hidden;
 }
 
 .img-hero {
-  flex: 1;
-  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
 }
 
 .img-hero img {
   width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 10px;
+  height: 100%;
 }
 
-/* Titoli di sezione */
-.nome-sezione {
-  text-align: center;
-  margin: 50px 0 20px;
-}
-
-.nome-sezione h1 {
-  font-size: 32px;
-  color: #2c5f2d;
-}
-
-/* Card sezione */
-.card {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
-  margin-bottom: 50px;
-}
-
-.card .img img {
+.testo-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.testo-hero .contenitore-testo-hero {
+  max-width: 900px;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.contenitore-testo-hero p {
+  font-size: 20px;
+}
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 128px 16px 64px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.carte-layout {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.h2-carte {
+  position: sticky;
+  top: 140px;
+  font-size: 30px;
+  font-weight: normal;
+  padding-right: 50px;
+}
+
+.h2-carte h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.content-carte {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.p-carte {
+  font-size: 19px;
+  line-height: 1.4;
+}
+
+.p-carte p {
+  margin-bottom: 1rem;
+}
+
+.img-carte img {
+  width: 100%;
+  height: 50%;
   border-radius: 8px;
 }
 
-.card .text {
-  text-align: center;
-  margin-top: 10px;
+section.card {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 1400px;
+  margin: 48px auto;
+  gap: 30px;
 }
 
-.card .text a {
-  text-decoration: none;
-  color: #2c5f2d;
+.card img,
+section.card img {
+  height: 250px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+section.card p,
+.card .text-box p {
+  margin: 0;
+  font-size: 20px;
+  color: #101129;
+  padding: 10px;
   font-weight: bold;
-  font-size: 18px;
+  text-align: center;
 }
 
-/* Attività ed esperienze */
-.attivita-ed-esperienze {
+section.card .text a {
+  color: #101129;
+}
+
+section.card div {
+  background-color: #C1DBD0;
+  border-radius: 8px;
+  padding: 0 0 5px;
+}
+
+section.intro {
+  margin: auto;
+  font-size: 18px;
+  color: #101129;
+  padding: 50px;
+}
+
+.content {
+  max-width: 1700px;
+  margin: auto;
   display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-bottom: 60px;
-  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  padding: 40px 16px;
 }
 
-.box-testo {
-  flex: 1;
-  min-width: 250px;
+.card,
+.blocco {
+  display: flex;
+  align-items: stretch;
+  gap: 25px;
 }
 
-.box-testo p {
-  font-size: 18px;
+.card img,
+.blocco img {
+  width: 20%;
+  border-radius: 8px;
+}
+
+.card .text-box,
+.blocco .text-box {
+  width: 100%;
+  padding: 25px;
+  border-radius: 8px;
+  color: #101129;
+}
+
+.card .text-box {
+  background-color: #CEF17B;
+}
+
+.blocco .text-box {
+  background-color: #D5EFE6;
+}
+
+.card .text-box h2,
+.blocco .text-box h2 {
+  font-size: 30px;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
+.card .text-box p,
+.blocco .text-box p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.attivita-ed-esperienze {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding-bottom: 60px;
+}
+
+.box-testo {
+  background-color: #CEF17B;
+  padding: 30px;
+  border-radius: 12px;
+  width: 500px;
+  height: 450px;
+}
+
+.box-testo h2,
+.box-testo p {
+  font-size: 24px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
 .box-testo a {
-  display: inline-block;
-  margin-top: 8px;
-  text-decoration: none;
-  color: #fff;
-  background-color: #2c5f2d;
-  padding: 8px 16px;
-  border-radius: 5px;
+  color: #084734;
+  font-weight: bold;
 }
 
 .box-immagini {
-  flex: 1;
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .box-immagini img {
-  width: 100%;
-  max-width: 250px;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
+  width: 400px;
+  height: 550px;
+  border-radius: 8px;
 }
 
-/* Footer */
-footer {
-  background-color: #2c5f2d;
-  color: white;
+.altri-parchi {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1400px;
+  margin: 48px auto;
+  gap: 30px;
+}
+
+.testo-parco {
+  background-color: #CEF17B;
   padding: 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 18px;
   text-align: center;
 }
 
+.nome-sezione h1 {
+  max-width: 1400px;
+  margin: 48px auto;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
 footer nav {
-  margin-top: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 footer nav a {
   color: white;
   text-decoration: none;
-  margin: 0 10px;
 }
 
-/* Responsive tweaks */
 @media (max-width: 768px) {
-  .uno {
+  header,
+  footer {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  header nav ul,
+  footer nav {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  section.hero h1 {
+    font-size: 40px;
+  }
+
+  section.hero p {
+    font-size: 18px;
+  }
+
+  section.card {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 16px;
+  }
+
+  section.card p {
+    font-size: 16px;
+    padding: 12px;
   }
 
   .attivita-ed-esperienze {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .box-testo,
+  .box-immagini {
+    width: 90%;
+    text-align: center;
   }
 
   .box-immagini {
-    justify-content: center;
+    flex-direction: column;
   }
+
+  .box-immagini img,
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .altri-parchi {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card,
+  .blocco {
+    flex-direction: column;
+  }
+}
+
+
+
+.blocco .text-box h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.blocco .text-box p {
+  font-size: 20px;
+  line-height: 1.5;
 }
 
