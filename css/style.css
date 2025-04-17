@@ -185,8 +185,7 @@ section.card p,
 .card .text-box p {
   margin: 0;
   font-size: 18px;
-  background-color: #e2e2e2;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ 
   padding: 10px;
   font-weight: bold;
   text-align: center;
