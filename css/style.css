@@ -60,7 +60,7 @@ section.hero {
 .hero h1 {
   margin: 0;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 20px;
   padding: 24px;
   position: relative;
 }
@@ -68,7 +68,7 @@ section.hero {
 .hero p {
   margin: 0;
   font-weight: normal;
-  font-size: 18px
+  font-size: 16px
 }
 
 .uno {
@@ -366,7 +366,7 @@ footer nav a {
   }
 
   section.hero h1 {
-    font-size: 36px;
+    font-size: 18px;
     padding: 16px;
   }
 
@@ -399,7 +399,7 @@ footer nav a {
 
   .box-testo h2,
   .box-testo p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .box-immagini {
@@ -458,7 +458,7 @@ footer nav a {
     font-size: 16px;
   }
 
-  /* Sezione CARTE layout */
+ 
   .carte {
     padding: 32px 16px;
     gap: 32px;
@@ -472,7 +472,7 @@ footer nav a {
 
   .h2-carte {
     position: static;
-    font-size: 18px;
+    font-size: 16px;
     padding-right: 0;
     
   }
